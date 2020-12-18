@@ -1,0 +1,119 @@
+@import "variables";
+
+.trackList {
+	max-width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+
+	.track {
+		display: flex;
+		flex-direction: row;
+		border-radius: 5px;
+		justify-content: space-between;
+		max-width: 800px;
+		width: 100%;
+		padding: 5px 68px 5px 20px;
+		position: relative;
+		min-height: 35px;
+
+		&:hover {
+			background-color: rgba($white, 0.15);
+
+			.left {
+				.rank {
+					opacity: 0;
+				}
+
+				.play {
+					display: inline-block;
+				}
+			}
+
+			.right {
+				.MuiSvgIcon-root:not(.hide) {
+					display: block;
+				}
+			}
+		}
+
+		.left {
+			&>* {
+				display: inline-block;
+				vertical-align: middle;
+			}
+
+			img {
+				width: 40px;
+				margin-left: 20px;
+			}
+
+			.play {
+				display: none;
+				position: absolute;
+				left: 15px;
+				top: 50%;
+				transform: translateY(-50%);
+				cursor: pointer;
+			}
+
+			.name {
+				margin-left: 15px;
+			}
+		}
+
+		.right {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+
+			.MuiSvgIcon-root {
+				display: none;
+			}
+
+			.follow {
+				margin-right: 30px;
+				cursor: pointer;
+			}
+
+			.trackMenu {
+				position: absolute;
+				right: 20px;
+				top: 50%;
+				transform: translateY(-50%);
+
+				.MuiMenuItem-root {
+					font-size: 14px;
+				}
+			}
+		}
+
+		.rightfav {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+
+			.followfav {
+				margin-right: 30px;
+				cursor: pointer;
+			}
+
+			.trackMenu {
+				position: absolute;
+				right: 20px;
+				top: 50%;
+				transform: translateY(-50%);
+
+				.MuiMenuItem-root {
+					font-size: 14px;
+				}
+			}
+		}
+	}
+			.track:not(:hover) {
+				.trackMenu {
+					.MuiSvgIcon-root {
+						display: none;
+					}
+				}
+			}
+}

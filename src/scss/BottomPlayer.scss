@@ -1,0 +1,56 @@
+@import "./variables.scss";
+
+#bottomPlayer {
+	width: 100vw;
+	color: $white;
+	height: 90px;
+	background-color: $background-light;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+
+	.currentTrack {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		margin-left: 17px;
+
+		.currentTrackAlbumImage {
+			height: 56px;
+			width: 56px;
+			box-shadow: 0 0 10px rgba(0,0,0,.3);
+		}
+
+		.trackInfos {
+			margin-left: 10px;
+
+			.title {
+				font-size: 14px;
+			}
+
+			.artist {
+				color: $ligh-grey;
+				font-size: 12px;
+				margin-top: 5px;
+			}
+		}
+
+		.player {
+				display: inline-flex;
+				flex-direction: row;
+			.slider {
+				margin-top: 24px;
+				min-width: 200px;
+			}
+		}
+		.trackinfoglobal{
+			padding-left: 4rem;
+						display: inline-flex;
+						flex-direction: row;
+						align-items: left;
+						width: 400px;
+		}
+	}
+
+}

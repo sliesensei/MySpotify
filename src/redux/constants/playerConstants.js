@@ -1,0 +1,6 @@
+export const playerConstants = {
+    CURRENT: 'PLAYER_CURRENT',
+    ISPLAYING: 'PLAYER_ISPLAYING',
+    QUEUE: 'PLAYER_QUEUE',
+    DEVICE: 'PLAYER_DEVICE'
+};

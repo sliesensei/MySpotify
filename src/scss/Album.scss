@@ -1,0 +1,52 @@
+@import "variables";
+
+.album {
+	margin-top: 30px;
+
+	.coverimg {
+		display: inline-block;
+		width: 200px;
+	}
+
+	.content {
+		vertical-align: top;
+		display: inline-block;
+		margin-left: 20px;
+		width: calc(100% - 220px);
+
+		.artists {
+			margin-top: 30px;
+			margin-bottom: 20px;
+		}
+
+		.artists,
+		.artists a {
+			color: $ligh-grey;
+			text-decoration: none;
+		}
+
+		.header {
+			flex-direction: row;
+		}
+
+		.headerwithcover {
+			flex-direction: row;
+			text-align: left;
+			margin-bottom: 30px;
+			margin-top: 70px;
+		}
+
+
+		.cover {
+			margin-left: 25%;
+			height: 200px;
+			float: left;
+		}
+
+		.headerdiv {
+			margin-left: 40%;
+			height: 200px;
+		}
+
+	}
+}

@@ -1,0 +1,23 @@
+version: '2'
+
+services:
+
+  my_spotify:
+    container_name: my_spotify
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - '.:/usr/src/app'
+      - '/usr/src/app/node_modules'
+    ports:
+      - '3333:3000'
+    environment:
+      - NODE_ENV=development
+
+  web:
+    image: lavoweb/php-7.4
+    volumes:
+      - './build:/var/www/html'
+    ports:
+      - '8181:80'

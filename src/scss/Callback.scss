@@ -1,0 +1,21 @@
+@import "./variables.scss";
+
+#callback {
+	background-color: $background-main;
+	height: 100vh;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	.main-container {
+		color: #FFFFFF;
+		width: 500px;
+		max-width: 90%;
+		padding: 50px;
+		border-radius: 25px;
+		background-color: $background-secondary;
+		font-family: "Helvetica Neue", sans-serif;
+		text-align: center;
+	}
+}

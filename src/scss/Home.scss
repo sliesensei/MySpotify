@@ -1,0 +1,193 @@
+@import "./variables.scss";
+
+#home {
+	background-color: $background-main;
+
+	.recentlyPlayed {
+					position: relative;
+					text-align: center;
+		.recentlyPlayedItem {
+			display: inline-block;
+			width: 190px;
+			background-color: $background-light;
+			padding: 15px;
+			margin: 10px;
+			border-radius: 10px;
+			vertical-align: top;
+
+			&:not(:first-of-type) {
+				margin-left: 10px;
+			}
+
+			.image {
+				height: 150px;
+				width: 150px;
+				display: block;
+				margin: 0 auto 15px;
+			}
+
+			.title {
+				font-size: 16px;
+				color: $white;
+			}
+
+			.artists {
+				font-size: 14px;
+				color: $ligh-grey;
+				margin-bottom: 5px;
+			}
+
+			.container {
+				position: relative;
+				width: 100%;
+				max-width: 400px;
+			}
+
+			.overlay {
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				height: 100%;
+				width: 100%;
+				opacity: 0;
+				transition: .3s ease;
+				background-color: black;
+			}
+
+			.container:hover .overlay {
+				opacity: 0.8;
+			}
+
+			.icon {
+				color: white;
+				font-size: 100px;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				-ms-transform: translate(-50%, -50%);
+				text-align: center;
+			}
+
+			.fa-user:hover {
+				color: #eee;
+			}
+
+		}
+
+		.recentlyPlayedItemVersion {
+			display: inline-block;
+			width: 250px;
+			background-color: rgba(73, 73, 73, 0.897);
+			padding: 15px;
+			margin-top: 50px;
+			margin-bottom: 40px;
+			margin-right: 130px;
+			margin-left: 10px;
+			border-radius: 10px;
+			vertical-align: top;
+			box-shadow: -10px 10px 5px #282828;
+
+
+			&:not(:first-of-type) {
+				margin-left: 10px;
+			}
+
+			.image {
+				height: 160px;
+				width: 250px;
+				object-fit: cover;
+				display: block;
+				margin: 0 auto 15px;
+			}
+
+			.title {
+				font-size: 16px;
+				color: $white;
+			}
+
+			.artists {
+				font-size: 14px;
+				color: $ligh-grey;
+				margin-bottom: 5px;
+			}
+
+			.container {
+				position: relative;
+				width: 100%;
+				max-width: 400px;
+				margin-top: -50px;
+				margin-left: 20px;
+			}
+
+			.overlay {
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				height: 160px;
+				width: 125px;
+				opacity: 0;
+				transition: .3s ease;
+				background-color: black;
+			}
+
+			.overlaytwo {
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				left: 125px;
+				right: 0;
+				height: 160px;
+				width: 125px;
+				opacity: 0;
+				transition: .3s ease;
+				background-color: black;
+			}
+
+			.overlaythree {
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				height: 160px;
+				width: 250px;
+				opacity: 0;
+				transition: .3s ease;
+				background-color: black;
+			}
+
+			.overlay:hover {
+				opacity: 0.8;
+			}
+
+			.overlaytwo:hover {
+				opacity: 0.8;
+			}
+
+			.overlaythree:hover {
+				opacity: 0.8;
+			}
+
+			.icon {
+				color: white;
+				font-size: 100px;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				-ms-transform: translate(-50%, -50%);
+				text-align: center;
+			}
+
+			.fa-user:hover {
+				color: #eee;
+			}
+
+		}
+	}
+}

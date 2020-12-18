@@ -1,0 +1,4 @@
+export const searchConstants = {
+    LASTSEARCH: 'SEARCH_LASTSEARCH',
+    LASTRESULTSEARCH: 'SEARCH_LASTRESULTSEARCH',
+};

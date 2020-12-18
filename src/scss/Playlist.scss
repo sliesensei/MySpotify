@@ -1,0 +1,19 @@
+@import "./variables.scss";
+
+#playlist {
+	margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+	.roundimage {
+		width: 250px;
+		height: 250px;
+		border-top-left-radius: 50% 50%;
+		border-top-right-radius: 50% 50%;
+		border-bottom-right-radius: 50% 50%;
+		border-bottom-left-radius: 50% 50%;
+		object-fit: cover;
+		display: block;
+		margin: 0 auto 0px;
+		background-color: grey;
+	}
+}
